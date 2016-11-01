@@ -1,0 +1,254 @@
+.active {
+  background-color: #eef1f6;
+}
+
+.active a {
+  color: white;
+}
+
+#imageGallery {
+  list-style: none;
+  /*get rid of the dots*/
+  display: flex;
+  /*make the thumbnails into a line*/
+  /*	a {
+		margin: 0 1em;
+	}*/
+}
+
+.title {
+	padding: 2rem 0;
+}
+
+.large-image {
+	width: 600px;
+	height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #333;
+  font-size: 100%;
+  font-family: "Open Sans", "arial", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 67em;
+  margin: 0 auto;
+}
+
+header {
+  color: #16325c;
+  padding: 1rem;
+}
+
+@media (min-width: 46.25rem) {
+  header {
+    padding: 0x;
+  }
+}
+
+.info {
+  width: 100%;
+  background-color: #16325c;
+  color: white;
+  padding: .5rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  float: left;
+}
+
+.info th {
+  text-align: left;
+}
+
+.info ul {
+  float: left;
+  width: 40%;
+}
+
+@media (min-width: 46.25rem) {
+  .info ul {
+    margin-top: 1em;
+    width: 100%;
+  }
+}
+
+.info table {
+  float: right;
+  width: 40%;
+}
+
+.info a {
+	color: #1589EE;
+}
+
+@media (min-width: 46.25rem) {
+  .info table {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 46.25rem) {
+  .info {
+    position: absolute;
+    top: 0;
+    left: -12rem;
+    width: 11rem;
+  }
+}
+
+article {
+  margin: 0 1em 0 1em;
+  position: relative;
+}
+
+article h2 {
+  color: #16325c;
+}
+
+@media (min-width: 46.25rem) {
+  article {
+    margin: 2em 0 0 12em;
+  }
+}
+
+blockquote {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.5em;
+  color: #16325c;
+  font-style: italic;
+}
+
+@media (min-width: 46.25rem) {
+  blockquote {
+    float: right;
+    width: 40%;
+  }
+}
+
+p {
+  padding: 2em 2em;
+  background: #eef1f6;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  float: right;
+  margin: 0.6rem;
+}
+
+/*nav a:before {
+	padding-left: 1em;
+	content: "Q";
+	}*/
+.p-reviews .t-reviews,
+.p-recipes .t-recipes {
+  color: #fff;
+  background: #16325c;
+}
+
+.main-nav {
+  margin-bottom: 1em;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-nav li {
+  flex: 1 1 auto;
+}
+
+.main-nav a {
+  padding: .5rem 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  color: #16325c;
+  background-color: #eef1f6;
+}
+
+.main-nav a:hover, .main-nav a:focus {
+  opacity: .75;
+}
+
+@media (min-width: 46.25rem) {
+  .main-nav a {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+  .main-nav a i {
+    margin: 0 .3rem;
+  }
+}
+
+.main-nav span {
+  display: none;
+}
+
+@media (min-width: 46.25rem) {
+  .main-nav span {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #888;
+    margin: 0.25rem 0 0 0;
+  }
+}
+
+.main-nav .icon {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 0.5rem;
+  fill: #999;
+}
+
+@media (min-width: 46.25rem) {
+  .main-nav .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.main-nav.outlines * {
+  outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 620px) {
+  #placeholder {
+     width: 100%;
+     height: auto;
+     margin-right: 0;
+  }
+  .title {
+  	margin-left: 0.5em;
+  }
+}
+
+
+/*# sourceMappingURL=styles.css.map */

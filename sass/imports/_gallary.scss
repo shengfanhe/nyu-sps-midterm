@@ -1,0 +1,14 @@
+.active {
+	background-color: red;
+}
+.active a {
+	color: white;
+}
+#imageGallery {
+	list-style: none; /*get rid of the dots*/
+	display: flex; /*make the thumbnails into a line*/
+/*	a {
+		margin: 0 1em;
+	}*/
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "pictureviewer",
+  "version": "1.0.0",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Shengfan He",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sftp": "^0.1.5",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "description": ""
+}

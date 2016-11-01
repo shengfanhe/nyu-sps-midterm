@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>New York City Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
+    <script src="js/alt.js" charset="utf-8"></script>
+    <script src="js/nav.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-ng-app>
+    <div class="wrapper p-recipes">
+        <nav role='navigation' class="main-nav" id="main-nav">
+            <ul id="main-nav-list">
+                <li>
+                    <a class="t-home" href="#">
+                        <i class="fa fa-home icon" aria-hidden="true"></i>
+                        <div>
+                            Tour
+                            <span>where you start</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="t-recipes" href="index.html">
+                        <i class="fa fa-hospital-o icon" aria-hidden="true"></i>
+                        <div>
+                            Buildings
+                            <span>featured architecture</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="t-reviews" href="reviews.html">
+                        <i class="fa fa-comments icon" aria-hidden="true"></i>
+                        <div>
+                            Reviews
+                            <span>what people said</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="t-delivery" href="#">
+                        <i class="fa fa-taxi icon" aria-hidden="true"></i>
+                        <div>
+                            Service
+                            <span>support us</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="title">
+            <h1>Featured Buildings</h1>
+            <h2 style="color: #ba9e00; font-weight: 200">The most famous NYC skyscrapers</h2>
+        </div>
+        <div data-ng-controller="ListController" style="overflow-x: scroll;">
+             <ul id="imageGallery">
+                <li data-ng-repeat="entry in entries">
+                <!-- {{5+5}} javascript in HTML -->
+                    <a href="img/{{ entry.picture[1] }}" title="{{ entry.title }}">
+                    <img src="img/{{ entry.picture[0] }}">
+                    </a>
+                </li>
+            </ul>
+        </div>
+	   <div id="content">
+		  <img id="placeholder" src="img/placeholder.gif" alt="Placeholder">
+		  <p id="description">Select an image.</p>
+	   </div>
+    </div>
+</body>
+</html>
